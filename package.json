@@ -1,8 +1,8 @@
 {
 	"name": "unity-code-snippets-fork",
 	"displayName": "Unity Code Snippets Fork",
-	"description": "All snippets you need for Unity3D development. FORKED!",
-	"version": "1.4.0",
+	"description": "A fork of the original Unity Code Snippets package.",
+	"version": "1.4.1",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/josephan/vscode-unity-code-snippets"
