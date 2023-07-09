@@ -1,4 +1,11 @@
 {
+	"Unity GetComponent": {
+		"prefix": "getcomp",
+		"description": "Unity GetComponent",
+		"body": [
+			"var ${1:componentVariableName} = GetComponent<${2:YourComponentType}>();"
+		]
+	},
 	"Unity MonoBehaviour": {
 		"prefix": "MonoBehaviour",
 		"description": "Unity MonoBehaviour class template.",
@@ -733,6 +740,26 @@
 		"body": [
 			"private void Update() {",
 			"\t$0",
+			"}"
+		]
+	},
+	"NetworkBehaviour OnNetworkSpawn": {
+		"prefix": "OnNetworkSpawn",
+		"description": "Gets called when the NetworkObject gets spawned, message handlers are ready to be registered and the network is setup.",
+		"body": [
+			"public override void OnNetworkSpawn() {",
+			"\t$0",
+			"}"
+		]
+	},
+	"NetworkBehaviour OnDestroy": {
+		"prefix": "OnDestroyNetwork",
+		"description": "Invoked when the GameObject the NetworkBehaviour is attached to is destroyed. NOTE: If you override this, you will want to always invoke this base class version of this OnDestroy() method!!",
+		"body": [
+			"public override void OnDestroy() {",
+			"\t$0",
+			"// Always invok the base",
+			"base.OnDestroy();",
 			"}"
 		]
 	},
