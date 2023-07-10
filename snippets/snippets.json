@@ -3,7 +3,7 @@
 		"prefix": "getcomp",
 		"description": "Unity GetComponent",
 		"body": [
-			"var ${1:componentVariableName} = GetComponent<${2:YourComponentType}>();"
+			"GetComponent<${1:ComponentType}>();"
 		]
 	},
 	"Unity MonoBehaviour": {
