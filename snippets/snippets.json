@@ -35,7 +35,7 @@
 		"description": "Unity NetworkBehaviour class template.",
 		"body": [
 			"using UnityEngine;",
-			"using UnityEngine.Networking;",
+			"using Unity.Netcode;",
 			"",
 			"public class ${TM_FILENAME_BASE} : NetworkBehaviour {",
 			"\t$0",
@@ -743,6 +743,15 @@
 			"}"
 		]
 	},
+  "Coroutine": {
+    "prefix": "coroutine",
+    "description": "Unity Coroutine snippet",
+    "body": [
+      "private IEnumerator ${1:MyCoroutine}() {",
+      "    yield return null);",
+      "}"
+    ]
+  },
 	"NetworkBehaviour OnNetworkSpawn": {
 		"prefix": "OnNetworkSpawn",
 		"description": "Gets called when the NetworkObject gets spawned, message handlers are ready to be registered and the network is setup.",

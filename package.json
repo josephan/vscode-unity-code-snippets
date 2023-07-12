@@ -2,7 +2,7 @@
 	"name": "unity-code-snippets-fork",
 	"displayName": "Unity Code Snippets Fork",
 	"description": "A fork of the original Unity Code Snippets package.",
-	"version": "1.4.3",
+	"version": "1.4.4",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/josephan/vscode-unity-code-snippets"
