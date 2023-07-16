@@ -757,6 +757,8 @@
 		"description": "Gets called when the NetworkObject gets spawned, message handlers are ready to be registered and the network is setup.",
 		"body": [
 			"public override void OnNetworkSpawn() {",
+			"\tbase.OnNetworkSpawn();",
+      "",
 			"\t$0",
 			"}"
 		]
@@ -767,8 +769,8 @@
 		"body": [
 			"public override void OnDestroy() {",
 			"\t$0",
-			"// Always invok the base",
-			"base.OnDestroy();",
+			"",
+			"\tbase.OnDestroy();",
 			"}"
 		]
 	},
