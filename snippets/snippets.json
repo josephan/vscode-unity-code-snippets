@@ -748,7 +748,7 @@
     "description": "Unity Coroutine snippet",
     "body": [
       "private IEnumerator ${1:MyCoroutine}() {",
-      "    yield return null);",
+      "    yield return null;",
       "}"
     ]
   },
