@@ -760,8 +760,8 @@
 		]
 	},
 	"Yield WaitForSeconds": {
-		"prefix": "yieldnull",
-		"description": "Unity Coroutine yield null",
+		"prefix": "yieldwait",
+		"description": "Unity Coroutine yield WaitForSeconds",
 		"body": [
 			"yield return new WaitForSeconds($1);$0"
 		]
