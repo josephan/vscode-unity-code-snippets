@@ -743,22 +743,36 @@
 			"}"
 		]
 	},
-  "Coroutine": {
-    "prefix": "coroutine",
-    "description": "Unity Coroutine snippet",
-    "body": [
-      "private IEnumerator ${1:MyCoroutine}() {",
-      "    yield return null;",
-      "}"
-    ]
-  },
+	"Coroutine": {
+		"prefix": "coroutine",
+		"description": "Unity Coroutine snippet",
+		"body": [
+			"private IEnumerator ${1:MyCoroutine}() {",
+			"    yield return null;",
+			"}"
+		]
+	},
+	"Yield Null": {
+		"prefix": "yieldnull",
+		"description": "Unity Coroutine yield null",
+		"body": [
+			"yield return null;"
+		]
+	},
+	"Yield WaitForSeconds": {
+		"prefix": "yieldnull",
+		"description": "Unity Coroutine yield null",
+		"body": [
+			"yield return new WaitForSeconds($1);$0"
+		]
+	},
 	"NetworkBehaviour OnNetworkSpawn": {
 		"prefix": "OnNetworkSpawn",
 		"description": "Gets called when the NetworkObject gets spawned, message handlers are ready to be registered and the network is setup.",
 		"body": [
 			"public override void OnNetworkSpawn() {",
 			"\tbase.OnNetworkSpawn();",
-      "",
+			"",
 			"\t$0",
 			"}"
 		]
@@ -778,7 +792,7 @@
 		"prefix": "serverrpc",
 		"description": "A ServerRpc is a remote procedure call (RPC) that can be only invoked by a client and will always be received and executed on the server/host",
 		"body": [
-      "[ServerRpc(RequireOwnership = true)]",
+			"[ServerRpc(RequireOwnership = true)]",
 			"public void ${1:MethodName}ServerRpc(ServerRpcParams serverRpcParams = default) {",
 			"\t$0",
 			"}"
@@ -788,7 +802,7 @@
 		"prefix": "clientrpc",
 		"description": "A ClientRpc will be fired by the server but executed on clients.",
 		"body": [
-      "[ClientRpc]",
+			"[ClientRpc]",
 			"public void ${1:MethodName}ClientRpc(ClientRpcParams clientRpcParams = default) {",
 			"\t$0",
 			"}"
