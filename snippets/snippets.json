@@ -766,6 +766,13 @@
 			"yield return new WaitForSeconds($1);$0"
 		]
 	},
+	"Yield WaitForFixedUpdate": {
+		"prefix": "yieldfixed",
+		"description": "Unity Coroutine yield WaitForFixedUpdate",
+		"body": [
+			"yield return new WaitForFixedUpdate();"
+		]
+	},
 	"NetworkBehaviour OnNetworkSpawn": {
 		"prefix": "OnNetworkSpawn",
 		"description": "Gets called when the NetworkObject gets spawned, message handlers are ready to be registered and the network is setup.",
